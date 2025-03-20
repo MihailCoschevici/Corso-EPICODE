@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    margin: 0;
+    color:#333;
+    font-family: Georgia,serif;
+}
+
+header img {
+    width: 200px;
+    margin: 1rem 0;
+}
+
+nav {
+    background-color: #fefbf1;
+    padding: 1rem 0;
+    border-top:  1px solid #ffd977;
+    color: #004d4d;
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+nav span span{
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+main img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(34,60,80,02);
+}
