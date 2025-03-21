@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 100px;
+    margin-left: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+}
+.header-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-right a{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-container{
+    padding: 10px 40px;
+    border-bottom: 1px solid #ddd;
+}
