@@ -13,9 +13,17 @@
 
     Hobby e Interessi:
     
-      - Intelligenza Artificiale
-      -  Musica e composizione
-      - Viaggi e cultura
+   - Riprese con il drone
+
+   - Creazione di contenuti online
+
+   - Fitness e nutrizione
+   
+   -  Sviluppo Web
+
+   -  Musica e composizione
+
+   - Viaggi e cultura
     
 <section class="contacts">
     <h3>Contatti</h3>

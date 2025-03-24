@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDIUM Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b71b2f4d95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container header-container">
+      <img src="Medium-Logo.png" alt="Medium Logo" class="logo">
+      <div class="header-right">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+        <a href="#"><i class="fa-regular fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== NAV MENU ===== -->
+  <nav class="menu-container">
+    <ul class="menu">
+      <li><a href="#">Following</a></li>
+      <li><a href="#">Recommended for you</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <div class="main-container container">
+      <!-- Secțiunea de articole (60% lățime) -->
+      <section class="articles-section">
+        <article class="article-card">
+          <div class="article-text">
+            <h2>React state management in 2022</h2>
+            <p>La începutul anului am scris că voi recomanda Redux, dar am schimbat părerea...</p>
+            <a href="#" class="read-more">Read more</a>
+          </div>
+          <img src="article-image-1.jpg" alt="React article" class="article-image">
+        </article>
+
+        <article class="article-card">
+          <div class="article-text">
+            <h2>How To Sanitize Your Express App</h2>
+            <p>Cea mai simplă metodă de a-ți proteja aplicația Express este folosirea body-parser...</p>
+            <a href="#" class="read-more">Read more</a>
+          </div>
+          <img src="article-image-2.jpg" alt="Express article" class="article-image">
+        </article>
+
+        <!-- Poți adăuga mai multe articole aici -->
+
+        <!-- Elemente suplimentare sub articole -->
+        <div class="more-content">
+          <p>Aici poți adăuga alte elemente suplimentare, bannere sau recomandări.</p>
+        </div>
+      </section>
+
+      <!-- Sidebar (40% lățime) -->
+      <aside class="sidebar">
+        <div class="sidebar-box recommended-topics">
+          <h3>Recommended topics</h3>
+          <div class="topics">
+            <button>Technology</button>
+            <button>Money</button>
+            <button>Business</button>
+            <button>Productivity</button>
+            <button>Psychology</button>
+            <button>Mindfulness</button>
+          </div>
+        </div>
+
+        <div class="sidebar-box who-to-follow">
+          <h3>Who to follow</h3>
+          <ul>
+            <li>
+              <span>Lesig</span>
+              <button>Follow</button>
+            </li>
+            <li>
+              <span>David Wineberg</span>
+              <button>Follow</button>
+            </li>
+            <li>
+              <span>Bonsu Thompson</span>
+              <button>Follow</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

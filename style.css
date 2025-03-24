@@ -1,0 +1,215 @@
+
+  
+  /* Body și fonturile */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    border-bottom: 1px solid #ddd;
+    height: 100px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100px;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .header-right a {
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+    font-size: 30px;
+  }
+  
+  /* ===== NAV MENU ===== */
+  .menu-container {
+    padding: 10px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #747574;
+  }
+  
+  /* ===== MAIN CONTENT ===== */
+  .main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    width: 100%;
+  }
+  
+  /* Articole (60% lățime) */
+  .articles-section {
+    width: 100%;
+    flex: 0 0 60%;
+    border-right: 1px solid #ddd;  /* linia verticală de separare */
+    padding-right: 20px;
+  min-width: 60%;
+  }
+    
+  .article-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .article-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Conținutul text al articolului */
+  .article-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .article-text h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .article-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Imaginea din articol */
+  .article-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Elemente suplimentare sub articole */
+  .more-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* ===== SIDEBAR (40% lățime) ===== */
+  .sidebar {
+    flex: 0 0 40%;
+    padding-left: 20px;
+  }
+  
+  .sidebar-box {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Recommended topics cu butoane */
+  .recommended-topics .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .recommended-topics .topics button {
+    background-color: #e7f3ff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .recommended-topics .topics button:hover {
+    background-color: #d0e7ff;
+  }
+  
+  /* Who to follow */
+  .who-to-follow ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .who-to-follow ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .who-to-follow ul li button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .who-to-follow ul li button:hover {
+    background-color: #0056b3;
+  }
+  .sidebar {
+    flex-basis: 40%;
+    min-width: 250px;}
