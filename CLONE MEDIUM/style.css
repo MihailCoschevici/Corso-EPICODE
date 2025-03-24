@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .logo{
     height: 100px;
     margin-left: 20px;
@@ -16,11 +17,13 @@ header{
     height: 100px;
     border-bottom: 1px solid #ddd;
 }
+
 .header-right{
     display: flex;
     gap: 20px;
     align-items: center;
     margin-right: 20px;
+   
 }
 
 .header-right a{
@@ -28,31 +31,75 @@ header{
     color: rgb(128, 126, 126);
     font-size: 30px;
 }
+
 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
+
 .menu-container{
-    padding: 10px 40px;
+    padding: 40px 40px;
     border-bottom: 1px solid #ddd;
-   
+    width: calc(70% - 250px);
     
 }
+
 .menu {
     display: flex;
-    gap:20px;
+    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .menu li a{
     text-decoration: none;
     font-size: 25px;
-    color: #747574;
     justify-content: space-between;
 }
-.main{
-    background-color: rgb(128, 126, 126)
+
+
+.articles-section{
+    flex: 1;
+    max-width: 900px;
 }
+
+.articles-card{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.article-text h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article-text p{
+    font-size: 22px;
+    color: #797171;
+}
+
+.article-image{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.vertical-line {
+    width: 2px; 
+    background-color: #3a3939; 
+    position: absolute;
+    top: 129px; 
+    left: calc(80% - 250px);
+    height: 100vh; }
+
+
+
+
+
