@@ -88,6 +88,9 @@ header {
 .article-text {
     width: 70%;}
 
+    .article-details{
+        align-self: flex-start;
+    }
 .article-text h2 {
     margin-top: 0;
     font-size: 28px;
