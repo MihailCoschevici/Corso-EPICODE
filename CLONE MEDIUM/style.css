@@ -1,105 +1,232 @@
-*{
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #333;
+    font-size: 18px;
 }
 
-.logo{
-    height: 100px;
-    margin-left: 20px;
+
+header {
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
 }
 
-header{
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    height: 100px;
-    border-bottom: 1px solid #ddd;
+
 }
 
-.header-right{
+.logo {
+    height: 140px;
+}
+
+.header-right {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-right: 20px;
-   
+    gap: 40px;
 }
 
-.header-right a{
-    text-decoration: none;
-    color: rgb(128, 126, 126);
+.header-right a {
+    color: #706f6f;
     font-size: 30px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
 
-.menu-container{
-    padding: 40px 40px;
-    border-bottom: 1px solid #ddd;
-    width: calc(70% - 250px);
-    
+.menu-container {
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .menu {
     display: flex;
-    gap: 20px;
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.menu li a{
+.menu li {
+    padding: 30px 30px;
+}
+
+.menu li a {
     text-decoration: none;
-    font-size: 25px;
-    justify-content: space-between;
+    color: #333;
+    font-weight: 500;
 }
 
 
-.articles-section{
-    flex: 1;
-    max-width: 900px;
-}
-
-.articles-card{
+.content-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
     display: flex;
-    gap: 20px;
+    gap: 40px;
+}
+
+.articles-section {
+    flex: 2;
+}
+
+.right-sidebar {
+    flex: 1;
+    min-width: 350px;
+}
+
+
+.articles-card {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
 }
 
-.article-text h2{
+.article-text {
+    width: 70%;
+}
+
+.article-text h2 {
+    margin-top: 0;
     font-size: 28px;
-    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-.article-text p{
-    font-size: 22px;
-    color: #797171;
+.article-text p {
+    color: #666;
+    line-height: 1.5;
 }
 
-.article-image{
-    width: 300px;
-    height: auto;
+.article-image {
+    width: 25%;
+    height: 150px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
-.vertical-line {
-    width: 2px; 
-    background-color: #3a3939; 
-    position: absolute;
-    top: 129px; 
-    left: calc(80% - 250px);
-    height: 100vh; }
+.right-sidebar > div {
+    margin-bottom: 30px;
+}
+
+.right-sidebar h3 {
+    font-size: 16px;
+    color: #141414;
+    margin-bottom: 15px;
+}
 
 
+.twitter-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #141414;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.twitter-button img {
+    height: 20px;
+}
+
+.later-link {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 19px;
+    
+}
 
 
+.topics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+.topic-tag {
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+    gap: 12px;
+}
+
+.profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Formă rotundă */
+    object-fit: cover; /* Asigură că imaginile nu sunt deformate */
+    border: 1px solid #f0f0f0; /* Bordură subtilă */
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-weight: 600;
+}
+
+.profile-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.follow-btn {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.twitter-section h3 {
+    font-weight: 300;
+    font-size: 17px;
+    color: #444;
+    margin: 10px 0 20px;
+    line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+    
+    .article-text {
+        width: 100%;
+    }
+    
+    .article-image {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
