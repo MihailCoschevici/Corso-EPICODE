@@ -1,12 +1,9 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    font-size: 18px;
-}
-
+    font-size: 18px;}
 
 header {
     padding: 15px 0;
@@ -14,8 +11,7 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 100;
-}
+    z-index: 100;}
 
 .container {
     width: 95%;
@@ -23,109 +19,97 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-}
+    align-items: center;}
 
 .logo {
-    height: 140px;
-}
+    height: 140px;}
 
 .header-right {
     display: flex;
-    gap: 40px;
-}
+    gap: 40px;}
 
 .header-right a {
     color: #706f6f;
-    font-size: 30px;
-}
-
+    font-size: 30px;}
 
 .menu-container {
-    border-bottom: 1px solid #e6e6e6;
-}
+    border-bottom: 1px solid #e6e6e6;}
 
 .menu {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    margin: 0;}
 
 .menu li {
-    padding: 30px 30px;
-}
+    padding: 16px 24px 6px;
+    margin:0 5px;
+    position:relative;}
 
 .menu li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-}
+    font-size:14px;
+    letter-spacing: 0.3px;}
 
+.menu li.active a{
+    font-weight:400;
+    color:#000;}
+
+.menu li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; 
+    left: 0;
+    right: 0;
+    height: 2px;}
 
 .content-container {
     width: 95%;
     max-width: 1200px;
     margin: 30px auto;
     display: flex;
-    gap: 40px;
-}
+    gap: 40px;}
 
 .articles-section {
-    flex: 2;
-}
+    flex: 2;}
 
 .right-sidebar {
     flex: 1;
-    min-width: 350px;
-}
-
-
+    min-width: 350px;}
 .articles-card {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 30px 0;
-}
+    padding: 30px 0;}
 
 .article-text {
-    width: 70%;
-}
+    width: 70%;}
 
 .article-text h2 {
     margin-top: 0;
     font-size: 28px;
-    font-weight: 700;
-}
+    font-weight: 700;}
 
 .article-text p {
     color: #666;
-    line-height: 1.5;
-}
+    line-height: 1.5;}
 
 .article-image {
     width: 25%;
     height: 150px;
     object-fit: cover;
-    border-radius: 5px;
-}
+    border-radius: 5px;}
 
 .right-sidebar > div {
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
 
 .right-sidebar h3 {
     font-size: 16px;
     color: #141414;
-    margin-bottom: 15px;
-}
-
+    margin-bottom: 15px;}
 
 .twitter-button {
     display: flex;
@@ -136,38 +120,31 @@ header {
     padding: 10px 15px;
     border-radius: 20px;
     font-weight: 600;
-    cursor: pointer;
-}
+    cursor: pointer;}
 
 .twitter-button img {
-    height: 20px;
-}
+    height: 20px;}
 
 .later-link {
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
     color: #666;
     text-decoration: none;
-    font-size: 19px;
-    
-}
+    font-size: 16px;
+    text-align:center;    }
 
 
 .topics-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-}
+    gap: 10px;}
 
 .topic-tag {
     background-color: #f2f2f2;
     padding: 8px 12px;
     border-radius: 20px;
     font-size: 14px;
-    color: #333;
-}
-
-
+    color: #333;}
 .profile {
     display: flex;
     align-items: center;
@@ -179,9 +156,9 @@ header {
 .profile-pic {
     width: 48px;
     height: 48px;
-    border-radius: 50%; /* Formă rotundă */
-    object-fit: cover; /* Asigură că imaginile nu sunt deformate */
-    border: 1px solid #f0f0f0; /* Bordură subtilă */
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 1px solid #f0f0f0; 
 }
 
 .profile-info {
