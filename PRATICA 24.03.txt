@@ -1,0 +1,8 @@
+1.Un algoritmo in JavaScript  è semplicemente una serie di istruzioni che dicono al computer cosa fare e in quale ordine.
+
+2. Una variabile in JavaScript è come una scatola dove puoi mettere un valore e usarlo quando ti serve.
+
+3. Non sono la stessa cosa  ma tutte due hanno lo stesso significato che non ce niente:
+
+-  quano mettiamo undefinede JAVASCRIPT non sa quale valore dovrebbe essere.
+- invece null sappiamo che non ce niente e lo dobbiamo mettere intenzionalmente.
