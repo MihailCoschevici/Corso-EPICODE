@@ -44,19 +44,13 @@ header {
     
 }
 #bg-image {
-    background-image: url('/assets/bg-image.png');
-    background-size: cover;  
-    width: 92%;  
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    margin: 0 auto 30px;
-    background-position: center;
-    padding: 3rem 0;
+  background-image: url('/assets/bg-image.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 5rem 0; 
+  position: relative;
 }
-
 
 .image-gallery {
     display: flex; 
