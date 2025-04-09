@@ -39,7 +39,6 @@ const marco = {
     }
   }
   
-
   let totaleProdotti = 0;
   for (let i = 0; i < prezzi.length; i++) {
     totaleProdotti += prezzi[i];
@@ -55,8 +54,6 @@ const marco = {
   if (totaleScontato <= 100) {
     totaleFinale += costoSpedizione;
   }
-  
-  
   console.log("Il totale da pagare per " + utenteAcquirente.nome + " " + utenteAcquirente.cognome + " è: €" + totaleFinale);
   
   
