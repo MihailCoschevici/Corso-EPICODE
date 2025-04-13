@@ -1,9 +1,9 @@
 function cambiaColorePrezzi() {
     const colori = ["red", "green", "blue", "orange", "purple"];
-    const prezzi = document.querySelectorAll('table tr:nth-child(4) td'); // 4a riga = prezzi
+    const prezzi = document.querySelectorAll('table tr:nth-child(4) td'); 
     
     prezzi.forEach((td, index) => {
-        td.style.color = colori[index % colori.length]; // Cicla tra i colori
+        td.style.color = colori[index % colori.length]; 
     });
 }
 
