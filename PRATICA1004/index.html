@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>PRATICA 1004 SmartphoneWorld</title>
+  <style>
+    .link-amazon {
+        color: #FF9900;  /* Arancione Amazon */
+        font-weight: bold;
+        text-decoration: none;
+        padding: 3px 6px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        transition: all 0.3s;
+    }
+    .link-amazon:hover {
+        background-color: #FF9900;
+        color: white;
+    }
+    .immagine-nascosta {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+</style>
+</head>
+<body>
+
+  <h1>SmartphoneWorld</h1>
+
+  <table order="1" width="100%" height="600px">
+      <tr>
+      <td align="center"><img src="assets/AppleIphone15.jpg" alt="iPhone15" width="200px" height="200px"></td>
+      <td align="center"><img src="assets/MotorolaMotoe14.jpg" alt="Motorola" width="200px" height="200px"></td>
+      <td align="center"><img src="assets/SamungGalaxyA16_5g.jpg" alt="Samsung" width="200px" height="200px"></td>
+      <td align="center"><img src="assets/XiaomiRedmi14C.jpg" alt="Xiaomi 14C" width="200px" height="200px"></td>
+      <td align="center"><img src="assets/XiaomiRedmiA3.jpg" alt="Redmi A3" width="200px" height="200px"></td>
+    </tr>
+    <tr>
+      <td align="center"><h3>APPLE IPHONE 15</h3></td>
+      <td align="center"><h3>MOTOROLA MOTO E14</h3> </td>
+      <td align="center"><h3>SAMSUNG GALAXY A16</h3></td>
+      <td align="center"><h3>XIAOMI REDMI 14C</h3></td>
+      <td align="center"><h3>XIAOMI REDMI A3</h3></td>
+    </tr>
+    <tr>
+      <td align="center">L’iPhone 15 di Apple ha un design elegante, <br>display Super Retina XDR da 6,1" <br>e chip A16 Bionic per alte prestazioni.</td>
+      <td align="center" > Smartphone entry-level con <br>display HD+ da 6,5", design semplice e <br>sistema operativo Android Go.</td>
+      <td align="center">Il Samsung Galaxy A16 è uno smartphone di <br>fascia media con display HD+ da 6,5", <br>batteria da 5000 mAh e tripla fotocamera.</td>
+      <td align="center">Lo Xiaomi Redmi 14C è uno smartphone economico <br>con display HD+ da 6,88 pollici a 120Hz, processore MediaTek Helio<br> G81 Ultra e fotocamera principale da 50MP.</td>
+      <td align="center">Xiaomi Redmi A3 è uno smartphone entry-level <br>lanciato nel febbraio 2024, progettato per offrire <br>prestazioni affidabili a un prezzo accessibile.</td>
+    </tr>
+    <tr>
+      <td align="center">€ 699</td>
+      <td align="center">€ 74,55</td>
+      <td align="center">€ 141,99</td>
+      <td align="center">€ 85</td>
+      <td align="center">€ 76,50</td>
+      </tr>
+      <button onclick="cambiaColorePrezzi()">Cambia Colore Prezzi</button>
+      <button onclick="cambiaTitolo()">Cambia Titolo</button>
+      <button onclick="cambiaBackground()">Cambia Sfondo</button>
+      <button onclick="cambiaIndirizzo()">Cambia Indirizzo footer</button>
+      <button onclick="toggleVisibilitaImmagini()">Mostra/Nascondi Immagini</button>
+    <tr>
+      <td align="center"><a href="https://www.amazon.it/dp/B0CHWYJM58">Acquista su AMAZON</a></td>
+      <td  align="center"><a href="https://www.amazon.it/dp/B0D5RDYHSZ">Acquista su AMAZON</a></td>
+      <td  align="center"><a href="https://www.amazon.it/dp/B0DHZZ67HX">Acquista su AMAZON</a></td>
+      <td align="center"><a href="https://www.amazon.it/dp/B0DH22T9X3">Acquista su AMAZON</a></td>
+      <td align="center"><a href="https://www.amazon.it/dp/B0CWS285P6">Acquista su AMAZON</a></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <form action="#" method="GET">
+          <textarea rows="3" cols="20" placeholder="Lascia il tuo comento.."></textarea><br>
+          <input type="submit" value="Invia">
+        </form>
+      </td> 
+      <td align="center">
+        <form action="#" method="GET">
+          <textarea rows="3" cols="20" placeholder="Lascia il tuo comento.."></textarea><br>
+          <input type="submit" value="Invia">
+        </form>
+      </td>
+      <td align="center">
+        <form action="#" method="GET">
+          <textarea rows="3" cols="20" placeholder="Lascia il tuo comento.."></textarea><br>
+          <input type="submit" value="Invia">
+        </form>
+      </td>
+      <td align="center">
+        <form action="#" method="GET">
+          <textarea rows="3" cols="20" placeholder="Lascia il tuo comento.."></textarea><br>
+          <input type="submit" value="Invia">
+        </form>
+      </td>
+      <td align="center">
+        <form action="#" method="GET">
+          <textarea rows="3" cols="20" placeholder="Lascia il tuo comento.."></textarea><br>
+          <input type="submit" value="Invia">
+        </form>
+      </td>
+    </tr>
+  </table>
+  </div>
+  <footer style="background-color: #5e5d5d; color: rgb(237, 235, 235);text-align: center; padding: 10px;font-size:x-large;">
+    <p>SmartphoneWorld - Via dei Sconosciuti, 123 - 50127 FIRENZE</p>
+  </footer>
+<script>
+  //ESSERCIZIO 12 CAMBIO COLORE PREZZI
+  function cambiaColorePrezzi() {
+    const colori = ["red", "green", "blue", "orange", "purple"];
+    const prezzi = document.querySelectorAll('table tr:nth-child(4) td'); 
+    
+    prezzi.forEach((td, index) => {
+        td.style.color = colori[index % colori.length]; 
+    });
+}
+//ESSERCIZIO 7 CAMBIO TITOLO
+function cambiaTitolo() {
+    document.querySelector('h1').textContent = "Cambio Titolo SmartphoneWorld";
+}
+//ESSERCIZIO 8 CAMBIO BACKROUND
+function cambiaBackground() {
+    document.body.style.backgroundColor = "blue"; // Grigio chiaro
+}
+//ESSERCIZIO 9 CAMBIO INDIRIZZO FOOTER
+function cambiaIndirizzo() {
+    const indirizziFittizi = [
+        "SmartphoneWorld - Piazza Duomo, 1 - 20100 Milano",
+        "SmartphoneWorld - Via Roma, 42 - 00100 Roma",
+        "SmartphoneWorld - Corso Vittorio Emanuele, 99 - 10100 Torino"
+    ];
+    
+    const footer = document.querySelector('footer p');
+    const indirizzoCasuale = indirizziFittizi[Math.floor(Math.random() * indirizziFittizi.length)];
+    footer.textContent = indirizzoCasuale;
+
+    //ESSERCIZIO 10 AGGIUNGERE CSS CLASSI AI LINK AMAZON
+    function formattaLinkAmazon() {
+    const linksAmazon = document.querySelectorAll('table a[href*="amazon"]');
+    
+    linksAmazon.forEach(link => {
+        link.classList.add('link-amazon');
+    });
+}
+}
+//ESSERCIZIO 11 TOGLI VISIBILITA IMAGINI
+function toggleVisibilitaImmagini() {
+    const immagini = document.querySelectorAll('table img');
+    
+    immagini.forEach(img => {
+        img.classList.toggle('immagine-nascosta');
+    });
+}
+</script>
+</body>
+</html>
