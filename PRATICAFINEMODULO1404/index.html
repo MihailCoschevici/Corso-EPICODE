@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search - FINE MODULO JAVASCRIPT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"defer></script>
+</head>
+<body>
+  <header>
+    <h1>Job Search</h1>
+    <p>Cerca lavoro per titolo e località</p>
+  </header>
+  <section class="search-section">
+    <div class="input-group">
+      <label for="titleInput">Titolo del lavoro:</label>
+      <input type="text" id="titleInput" placeholder="Es. Developer">
+    </div>
+    <div class="input-group">
+      <label for="locationInput">Località:</label>
+      <input type="text" id="locationInput" placeholder="Es. US o NY">
+    </div>
+    <button id="searchButton">Cerca</button>
+  </section>
+  <section class="results-section">
+    <h2>Risultati</h2>
+    <div id="resultsCount">0 lavori trovati</div>
+    <div id="resultsContainer">
+     </div>
+  </section>
+</body>
+</html>

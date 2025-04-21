@@ -1,0 +1,136 @@
+/* Reset base per garantire consistenza tra browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Stile intestazione */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: #e74c3c 0px 0px 5px;
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Sezione di ricerca */
+  .search-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Bottone di ricerca */
+  #searchButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #850add;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #searchButton:hover {
+    background-color: #850add;
+
+  }
+  
+  /* Sezione risultati */
+  .results-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .results-section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  #resultsCount {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  /* Stile delle card dei lavori */
+  .job-card {
+    border-left: 4px solid #850add;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-title {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .job-location {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Messaggio nessun risultato */
+  .no-results {
+    text-align: center;
+    padding: 30px;
+    color: #e74c3c;
+    font-weight: 600;
+  }
