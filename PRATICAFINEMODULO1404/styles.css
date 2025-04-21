@@ -1,10 +1,4 @@
-/* Reset base per garantire consistenza tra browser */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -15,7 +9,7 @@
     margin: 0 auto;
   }
   
-  /* Stile intestazione */
+
   header {
     text-align: center;
     margin-bottom: 30px;
@@ -32,7 +26,6 @@
     margin-bottom: 10px;
   }
   
-  /* Sezione di ricerca */
   .search-section {
     background-color: white;
     padding: 25px;
@@ -60,7 +53,6 @@
     font-size: 1rem;
   }
   
-  /* Bottone di ricerca */
   #searchButton {
     width: 100%;
     padding: 12px;
@@ -79,7 +71,6 @@
 
   }
   
-  /* Sezione risultati */
   .results-section {
     background-color: white;
     padding: 25px;
@@ -100,7 +91,6 @@
     border-radius: 4px;
   }
   
-  /* Stile delle card dei lavori */
   .job-card {
     border-left: 4px solid #850add;
     padding: 20px;
@@ -127,7 +117,6 @@
     font-size: 0.9rem;
   }
   
-  /* Messaggio nessun risultato */
   .no-results {
     text-align: center;
     padding: 30px;
